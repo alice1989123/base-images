@@ -33,7 +33,7 @@ spec:
           sh '''
             /kaniko/executor \
               --context=$(pwd) \
-              --dockerfile=Dockerfile \
+              --dockerfile=Dockerfile_mlflow_pytorch \
               --destination=$IMAGE_BASE:$GIT_SHA \
               --destination=$IMAGE_BASE:latest \
               --label org.opencontainers.image.revision=$GIT_SHA \
